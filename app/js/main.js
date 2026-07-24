@@ -1,1 +1,2 @@
-console.log("Wavium Editor Loaded");
+// main.js
+console.log('Wavium editor loaded');
