@@ -1,20 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Wavium — Web Sound Editor</title>
-    <link rel="stylesheet" href="app/css/editor.css">
+<meta charset="UTF-8">
+<title>Wavium — Web Sound Editor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        background: #0d0d0d;
+        color: #fff;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    header {
+        padding: 20px 40px;
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background: #111;
+        border-bottom: 1px solid #222;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 120px 20px;
+        background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #4af, #9f4aff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+        font-size: 20px;
+        opacity: 0.8;
+        max-width: 600px;
+        margin: 0 auto 40px;
+    }
+
+    .start-btn {
+        padding: 15px 40px;
+        background: #4af;
+        color: #000;
+        font-weight: bold;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.2s;
+    }
+
+    .start-btn:hover {
+        background: #6bc2ff;
+    }
+
+    .features {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .feature-box {
+        width: 260px;
+        background: #141414;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid #222;
+        transition: 0.2s;
+    }
+
+    .feature-box:hover {
+        transform: translateY(-5px);
+        border-color: #4af;
+    }
+
+    .feature-box h3 {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        opacity: 0.5;
+        font-size: 14px;
+    }
+</style>
 </head>
 
 <body>
 
 <header>Wavium</header>
 
-<div class="home">
-    <h1>Welcome to Wavium</h1>
-    <p>A fast, lightweight, open‑source sound editor that runs in your browser.</p>
+<div class="hero">
+    <h1>Sound Editing, Simplified</h1>
+    <p>Wavium is a fast, lightweight, open‑source sound editor that runs directly in your browser.  
+       No installs. No setup. Just pure audio editing.</p>
+
     <a href="app/editor.html" class="start-btn">Open Editor</a>
 </div>
+
+<div class="features">
+    <div class="feature-box">
+        <h3>Browser‑Based</h3>
+        <p>Edit audio instantly without downloading anything.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>Open Source</h3>
+        <p>Fully transparent and community‑driven development.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>Desktop Ready</h3>
+        <p>Electron version coming soon for offline editing.</p>
+    </div>
+</div>
+
+<footer>
+    © 2026 Wavium — Open Source Audio Tools
+</footer>
 
 </body>
 </html>
