@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wavium Editor</title>
+    <link rel="stylesheet" href="css/editor.css">
+</head>
 
+<body>
+
+<header>Wavium — Editor</header>
+
+<div id="controls">
+    <input type="file" id="fileInput" accept="audio/*">
+    <button id="playBtn">Play</button>
+    <button id="stopBtn">Stop</button>
+    <button id="gainBtn">Apply Gain</button>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="exportBtn">Export WAV</button>
+</div>
+
+<div id="waveform">
+    <canvas id="canvas"></canvas>
+</div>
+
+<script src="js/audioLoader.js"></script>
+<script src="js/waveform.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/exporter.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
