@@ -1,1 +1,49 @@
+body {
+    margin: 0;
+    background: #0f0f0f;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
 
+header {
+    padding: 20px;
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#controls {
+    padding: 20px;
+    background: #141414;
+    border-right: 1px solid #333;
+    width: 260px;
+    height: calc(100vh - 70px);
+    float: left;
+}
+
+#controls button, #controls input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #222;
+    border: 1px solid #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+#waveform {
+    margin-left: 260px;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    width: 90%;
+    height: 80%;
+    background: #111;
+    border: 1px solid #333;
+}
